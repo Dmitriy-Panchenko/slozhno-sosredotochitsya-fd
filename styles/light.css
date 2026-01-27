@@ -5,8 +5,37 @@
 */
 
 :root.theme-light {
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
+  --border-color:#353430;
+  --accent-color: #ff8dcb;
+  --focus-border:#adadab;
+  --text-color: #353430;
+  --tl-color: #ffc2e6;
+  --title-hd-color: var(--accent-color);
+  --hd-txt-color: #353430;
+  --hd-sub-color: #353430;
+  --footer-color: #ffc2e6;
+  --rec-decor: hidden;
+  
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+@media (prefers-color-scheme: light) {
+  :root {    
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
+  --border-color:#353430;
+  --accent-color: #ff8dcb;
+  --text-color: #353430;
+  --tl-color: #ffc2e6;
+  --title-hd-color: var(--accent-color);
+  --hd-txt-color: #353430;
+  --hd-sub-color: #353430;
+  --footer-color: #ffc2e6;
+  --rec-decor: hidden;   
+  }
+} 
