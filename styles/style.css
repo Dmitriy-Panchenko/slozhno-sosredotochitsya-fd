@@ -358,7 +358,6 @@
 .word:hover {
   @media (width >= 1024px) {
     border-bottom: 1px solid var(--text-color);
-    /* text-decoration-color: var(--text-color); */
   }
 }
 
@@ -450,14 +449,6 @@
       grid-row: 4 / 5;
     }
   }
-}
-
-.section__image {
-  display: flex;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
 }
 
 .footer {
