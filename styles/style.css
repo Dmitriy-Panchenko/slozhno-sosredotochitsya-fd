@@ -367,11 +367,6 @@
   border-radius: 1px;
 }
 
-.pictures {
-  display: grid;
-  grid-auto-flow: row;
-}
-
 .pictures_title {
   font-family: var(--font-family);
   margin-block-end: 0;
@@ -389,7 +384,7 @@
 
     .section__image {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: cover;
       object-position: center;
       margin-block-start: 0;
@@ -449,6 +444,14 @@
       grid-row: 4 / 5;
     }
   }
+}
+
+.section__image {
+  display: flex;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .footer {
