@@ -13,8 +13,10 @@
   --border-color: #FF0070;
   --tl-color: #DB00FF;
   --text-color: #F1B2CE;
-  --hd-txt-color: #000028;
+  --hd-color: #FF0070;
+  --hd-txt-color: #FF0070;
   --background-color: #000028;
+  --hd-txt-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
   --font-style: normal;
   --font-text-style: Regular;
