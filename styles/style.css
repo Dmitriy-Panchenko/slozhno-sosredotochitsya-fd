@@ -98,7 +98,7 @@
   text-transform: lowercase;
 
   @media (width >= 768px) {
-    padding: 0 21px 4px 10px;
+    padding: 0 10px 4px 10px;
   }
 
   @media (width >= 1024px) {
@@ -374,6 +374,7 @@
 
 .pictures {
   display: grid;
+  grid-auto-flow: row;
   gap: 10px;
   margin-block-end: 20px;
 
@@ -384,7 +385,7 @@
 
     .section__image {
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
       object-position: center;
       margin-block-start: 0;
