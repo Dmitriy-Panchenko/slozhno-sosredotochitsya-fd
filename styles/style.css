@@ -114,7 +114,7 @@
     IBM Plex Mono;
   font-weight: 700;
   line-height: 82.5%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   padding: 0;
   text-align: left;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -129,7 +129,6 @@
 
   @media (width >= 1024px) {
     display: flex;
-    left: 0;
     white-space: nowrap;
     overflow: visible;
   }
@@ -215,13 +214,14 @@
   right: 39px;
   top: 15px;
   content: "rec";
+  font-family: var(--font-family);
   text-transform: uppercase;
   visibility: var(--rec-decor);
   color: var(--accent-color);
 
   @media (width >= 768px) {
     right: 50px;
-    top: 25px;
+    top: 20px;
   }
 }
 
@@ -349,6 +349,8 @@
     }
   }
 }
+
+
 
 .word {
   text-decoration: none;
@@ -479,15 +481,15 @@
   color: var(--tl-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   font-family: var(--font-family);
-  font-size: var(--footer-size);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: var(--weight-title);
   line-height: var(--line-footer-height);
 
   @media (width >= 768px) {
-    font-size: var(--footer-midle-size);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   @media (width >= 1024px) {
-    font-size: var(--footer-big-size);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
